@@ -175,7 +175,7 @@ begin
 
 
   2'b01: begin
-  	     P_DATA_tb = P_DATA_in;
+  	 P_DATA_tb = P_DATA_in;
 		 PAR_TYP_tb  = 1'b0   ;     // Even PARITY
 		 PAR_EN_tb   = 1'b1	  ;     // PARITY ENABLE
           
@@ -186,7 +186,7 @@ begin
 
 
   2'b10: begin
-  	     P_DATA_tb = P_DATA_in;
+  	 P_DATA_tb = P_DATA_in;
 		 PAR_TYP_tb  = 1'b1   ;     // No PARITY
 		 PAR_EN_tb   = 1'b0	  ;     // PARITY Disabled
 
