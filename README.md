@@ -1,6 +1,8 @@
 # UART-Universal-Asynchronous-Reciever-Transmitter
 
-## Implemeting universal asynchronous reciever transmitter using verilog hardware description language, UART is used in a wide range of applications, including connecting microcontrollers to sensors, communicating with peripherals like GPS modules and Bluetooth modules, and for debugging and configuring devices during development.
+## In this repo I Implemeting universal asynchronous reciever transmitter using verilog hardware description language, genrate a gate-level netlist using synopsys tool and make dft and formal verification scripted by TCL.
+
+## UART is used in a wide range of applications, including connecting microcontrollers to sensors, communicating with peripherals like GPS modules and Bluetooth modules, and for debugging and configuring devices during development.
 
 ### Block Digrams
 <div>
