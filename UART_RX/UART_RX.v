@@ -135,7 +135,7 @@ assign  middle_sample_point = (Prescale >> 1) - 1 ;
 assign  Prescale = PRESCALE;
 assign  flag_out = (current_state == CHECKING && !par_err && !stp_err && !strt_glitch) ? 1'b1 : 1'b0;
 
-always @(posedge CLK or posedge RST_n) begin
+always @(posedge CLK or negedge RST_n) begin
 	
 	if (!RST_n) begin
 		current_state <= IDLE;
@@ -160,7 +160,6 @@ always @(*) begin
 
 IDLE : begin
            if (!RX_IN ) begin
-           DATA_Valid = 1'b0;
   	       next_state = START;
            end
 
@@ -225,8 +224,8 @@ always @(*) begin
             
             if (!RX_IN ) begin
             DATA_Valid = 1'b0;
-  	        data_samp_en <= 1'b1  ;
-  	        enable       <= 1'b1  ;
+  	        data_samp_en = 1'b1  ;
+  	        enable       = 1'b1  ;
             end
           end  
 
